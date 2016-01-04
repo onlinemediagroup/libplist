@@ -576,12 +576,13 @@ PLIST_API void plist_to_xml(plist_t plist, char **plist_xml, uint32_t * length)
 
 
     /* free memory from parser initialization */
-    xmlCleanupCharEncodingHandlers();
-    xmlDictCleanup();
-    xmlResetLastError();
-    xmlCleanupGlobals();
-    xmlCleanupThreads();
-    xmlCleanupMemory();
+    /* xmlCleanupCharEncodingHandlers(); */
+    /* xmlDictCleanup(); */
+    /* xmlResetLastError(); */
+    /* xmlCleanupGlobals(); */
+    /* xmlCleanupThreads(); */
+    /* xmlCleanupMemory(); */
+
 }
 
 static xmlParserInputPtr plist_xml_external_entity_loader(const char *URL, const char *ID, xmlParserCtxtPtr ctxt)
@@ -604,10 +605,11 @@ PLIST_API void plist_from_xml(const char *plist_xml, uint32_t length, plist_t * 
     }
 
     /* free memory from parser initialization */
-    xmlCleanupCharEncodingHandlers();
-    xmlDictCleanup();
-    xmlResetLastError();
-    xmlCleanupGlobals();
-    xmlCleanupThreads();
-    xmlCleanupMemory();
+
+    /* xmlCleanupCharEncodingHandlers(); */
+    /* xmlDictCleanup(); */
+    /* xmlResetLastError(); */
+    /* xmlCleanupGlobals(); */
+    /* xmlCleanupThreads(); */
+    /* xmlCleanupMemory(); */
 }
